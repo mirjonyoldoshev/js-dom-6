@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="exchange-form">
+        <input step="any" required type="number" placeholder="Enter amount" id="amount">
+        <label for="from">From</label>
+        <select required="required" id="from">
+            <option value selected disabled >quyidagilardan birini tanlang</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="SUM">SUM</option>
+        </select>
+        <label for="to">To</label>
+        <select required="required" id="to">
+            <option value selected disabled >Squyidagilardan birini tanlang</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="SUM">SUM</option>
+        </select>
+        <div id="result-exchange"></div>
+        <button type="submit">Exchange</button>
+    </form>
+    <br>
+    <br>    
+    <br>
+
+    <form id="update-form">
+        <select required="required" id="base">
+            <option value selected disabled >Select bas currency</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="SUM">SUM</option>
+        </select>
+        <br>
+        <label for="usd-amount">USD</label>
+        <input step="any" required type="number" placeholder="Enter amount" id="usd-amount">
+        <label for="euro-amount">EUR</label>
+        <input step="any" required type="number" placeholder="Enter amount" id="eur-amount">
+        <label for="sum-amount">SUM</label>
+        <input step="any" required type="number" placeholder="Enter amount" id="sum-amount">
+        <label for="to">BASE currency</label>
+       
+        <div id="result-update"></div>
+        <button type="submit">Update</button>
+    </form>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
